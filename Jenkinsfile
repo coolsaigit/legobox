@@ -8,7 +8,7 @@ node ('master'){
         ]
 
     stage 'Create a Key'
-        def vpcJob = build job: 'key', parameters: [
+        def keyJob = build job: 'key', parameters: [
             string(name: 'stage', value: "${stage}"),
         ]
 }
